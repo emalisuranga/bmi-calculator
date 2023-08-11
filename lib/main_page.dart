@@ -14,21 +14,28 @@ class _MainPageState extends State<MainPage> {
       body: SafeArea(
           child: Container(
             color: Colors.white,
-            child: Column(
+            child: const Column(
               children: [
                 Row(
                   children: [
-                    Column(
-                      children: [
-                        Text("Male Icon"),
-                        Text("Male"),
-                      ],
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Icon(Icons.male,size: 150),
+                          Text("Male"),
+                        ],
+                      ),
                     ),
-                    Column(
-                      children: [
-                        Text("Female Icon"),
-                        Text("Female"),
-                      ],
+                    Spacer(),
+                    Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Column(
+                        children: [
+                          Icon(Icons.female,size: 150),
+                          Text("Female"),
+                        ],
+                      ),
                     )
                   ],
                 )
